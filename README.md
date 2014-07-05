@@ -1,6 +1,8 @@
 npmlog-file
 ===========
 
+[![Build Status](https://travis-ci.org/tjwebb/npmlog-file.svg?branch=master)](https://travis-ci.org/tjwebb/npmlog-file)
+
 Easily write npmlog output to a file in the same format as it logs to the screen
 
 ## Install
