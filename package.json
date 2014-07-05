@@ -6,7 +6,9 @@
   "dependencies": {
     "npmlog": "^0.1.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "mocha": "^1.20.1"
+  },
   "scripts": {
     "test": "mocha spec.js -R spec -b"
   },

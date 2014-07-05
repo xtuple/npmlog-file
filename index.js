@@ -1,3 +1,6 @@
+/* jshint node:true */
+'use strict';
+
 var fs = require('fs'),
   util = require('util'),
   os = require('os'),
@@ -7,13 +10,9 @@ var fs = require('fs'),
  * Adapted from <https://github.com/npm/npm/blob/master/lib/utils/error-handler.js#L328>
  */
 exports.write = function (_log, file) {
-  if (!fs.existsSync(file)) throw new Error(file +' does not exist');
-
-  log.silly('npmlog-file', 'Writing log file:', file);
   var out = '';
 
   _log.record.forEach(function (m) {
-    var out = '';
     var pref = [m.id, m.level];
     if (m.prefix) pref.push(m.prefix);
     pref = pref.join(' ');
@@ -29,4 +28,5 @@ exports.write = function (_log, file) {
   });
 
   fs.writeFileSync(file, out);
+  return true;
 };
