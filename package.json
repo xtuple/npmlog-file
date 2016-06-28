@@ -4,10 +4,10 @@
   "description": "Easily write npmlog output to a file in the same format as it logs to the screen",
   "main": "index.js",
   "dependencies": {
-    "npmlog": "^0.1.1"
+    "npmlog": "^3.1.2"
   },
   "devDependencies": {
-    "mocha": "^1.20.1"
+    "mocha": "^2.5.3"
   },
   "scripts": {
     "test": "mocha spec.js -R spec -b"
